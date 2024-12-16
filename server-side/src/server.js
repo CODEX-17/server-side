@@ -40,5 +40,5 @@ app.use('/feedback', feedback)
 const port = process.env.PORT || 5001
 
 server.listen(port, ()=> {
-    console.log('Listening to port: ', port)
+    console.log('Listening na to port: ', port)
 })

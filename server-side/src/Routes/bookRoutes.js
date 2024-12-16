@@ -3,6 +3,15 @@ const router = express.Router()
 const db = require('../db')
 
 //API get branch
+router.get('/testBook', (req, res) => {
+    console.log('running na!')
+
+    res.status(200).json({
+        message: 'running na!'
+    })
+})
+
+//API get branch
 router.get('/getBooks', (req, res) => {
 
     const query = 'SELECT * FROM books'
